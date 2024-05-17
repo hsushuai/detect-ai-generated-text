@@ -4,7 +4,7 @@
 
 任务来自 Kaggle 竞赛 **LLM - Detect AI Generated Text** [[Link]](https://www.kaggle.com/competitions/llm-detect-ai-generated-text)
 
-数据集使用 …………
+数据集使用 ……
 
 ## Section 1: 准备
 
