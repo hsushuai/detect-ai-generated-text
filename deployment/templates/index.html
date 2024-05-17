@@ -2,16 +2,24 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
+    <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
     <meta charset="utf-8">
-    <title>AI 文本检测</title>
+    <title>AI 生成文章检测</title>
 </head>
 
 <body>
     <h1>输入一篇文章</h1>
     <form action="/result" method="post">
-        <textarea name="input_text" rows="10" cols="30"></textarea>
+        <mdui-text-field
+                label="请你输入要检测的文本" name="input_text"
+
+                rows="10" cols="30" variant="outlined">
+        </mdui-text-field>
         <br>
-        <input type="submit" value="提交">
+        <div class="button-container" style="margin-top: 1.25em;">
+            <mdui-button type="submit" class="mdui-btn mdui-btn-raised mdui-color-theme">提交</mdui-button>
+        </div>
     </form>
 </body>
 

@@ -10,3 +10,4 @@ pynvml
 sentencepiece
 einops
 wandb
+flask
