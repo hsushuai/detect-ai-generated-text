@@ -4,9 +4,7 @@
 
 任务来自 Kaggle 竞赛 **LLM - Detect AI Generated Text** [[Link]](https://www.kaggle.com/competitions/llm-detect-ai-generated-text)
 
-数据集使用
-
-
+数据集使用 …………
 
 ## Section 1: 准备
 
@@ -18,6 +16,29 @@
 - Ubuntu 22.04
 
 GPU 使用 Nvidia A10 * 1（资源有限，项目支持多 GPU 训练）
+
+### 1.2 数据集和模型
+
+下载数据集，从头开始微调模型 🥊
+
+```bash
+mkdir data
+
+wget -P data https://github.com/hsushuai/detect-ai-generated-text/releases/download/dataset/detect-ai-generated-text-mix.zip
+wget -P data  https://github.com/hsushuai/detect-ai-generated-text/releases/download/dataset/llm-detect-ai-generated-text.zip
+
+unzip data/detect-ai-generated-text-mix.zip -d data
+unzip data/llm-detect-ai-generated-text.zip -d data
+```
+
+下载微调好的模型，直接用于推理 🚀
+
+```bash
+mkdir models
+
+wget -P models https://github.com/hsushuai/detect-ai-generated-text/releases/download/models/finetuned-deberta-v3-small-best.pth.tar
+wget -P models https://github.com/hsushuai/detect-ai-generated-text/releases/download/models/finetuned-deberta-v3-small-last.pth.tar
+```
 
 ### 1.3 依赖
 

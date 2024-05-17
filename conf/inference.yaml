@@ -5,5 +5,5 @@ model:
     gradient_checkpointing: true
 
 predict_params:
-    checkpoint_path: models/finetuned-deberta-v3-small/detect_ai_model_best.pth.tar
+    checkpoint_path: models/finetuned-deberta-v3-small-best.pth.tar
     per_device_eval_batch_size: 1
