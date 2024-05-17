@@ -1,17 +1,23 @@
 <!doctype html>
 <html lang="en">
 
-<head>
+<head class="mdui-theme-auto">
     <meta charset="utf-8">
-    <title>AI 文本检测结果</title>
+    <title>AI 生成文章检测结果</title>
+    <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
+    <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
 </head>
 
 <body>
-    <h1>输入的文章</h1>
-    <p>{{ input_text }}</p>
-    <h1>推理结果</h1>
-    <p>{{ result }}</p>
-    <a href="/">返回</a>
+    <div class="mdui-prose">
+        <h1>输入的文章</h1>
+        <p>{{ input_text }}</p>
+    </div>
+    <div style="margin-top: 5em">
+        <h1>推理结果</h1>
+        <p>{{ result }}</p>
+    </div>
+    <mdui-button href="/" style="margin-top: 1.25em;" class="mdui-btn mdui-btn-raised mdui-color-theme">返回</mdui-button>
 </body>
 
 </html>

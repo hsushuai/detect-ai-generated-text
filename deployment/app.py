@@ -51,7 +51,8 @@ def model_inference(text):
     pred = torch.sigmoid(logits)
     pred = pred.cpu().numpy().tolist()
 
-    return pred[0]
+    pred_report = f"{pred[0] * 100:.2f}% Probability Al generated"
+    return pred_report
 
 
 @app.route("/")
@@ -69,4 +70,4 @@ def result():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
