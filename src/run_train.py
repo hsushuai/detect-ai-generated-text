@@ -396,7 +396,7 @@ def run_training(cfg):
                 # ----- logging -----
                 if cfg.use_wandb:
                     accelerator.log({"score": score}, step=current_iteration)
-                    accelerator.log({"best_lb": best_score}, step=current_iteration)
+                    accelerator.log({"best_score": best_score}, step=current_iteration)
 
                     # ----- log scores dict -----
                     for k, v in scores_dict.items():

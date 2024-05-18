@@ -19,7 +19,7 @@ def load_everything():
     
     model = AIModel(cfg)
     checkpoint_path = cfg.predict_params.checkpoint_path
-    ckpt = torch.load(checkpoint_path)
+    ckpt = torch.load(checkpoint_path, map_location=DEVICE)
     model.load_state_dict(ckpt["state_dict"])
     
     return cfg, model.to(DEVICE), tokenizer
@@ -70,4 +70,4 @@ def result():
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)
