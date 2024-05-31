@@ -22,8 +22,8 @@ GPU 使用 Nvidia A10 * 1（资源有限，项目支持多 GPU 训练）
 克隆仓库并安装 requirements
 
 ```
-git clone https://github.com/rbiswasfc/llm-detect-ai.git
-cd llm-detect-ai
+git clone https://github.com/hsushuai/detect-ai-generated-text.git
+cd detect-ai-generated-text
 pip install -r requirements.txt
 ```
 
