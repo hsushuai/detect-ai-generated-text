@@ -82,3 +82,12 @@ use_wandb=false
 ```bash
 python deployment/app.py
 ```
+
+### 🐳 Docker 部署
+
+使用 Dockerfile 构建镜像，并运行容器
+
+```bash
+docker build -t detect_ai_generated_text .
+docker run -d -p 5000:5000 detect_ai_generated_text
+```
