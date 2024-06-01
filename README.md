@@ -4,7 +4,7 @@
 
 任务来自 Kaggle 竞赛 **LLM - Detect AI Generated Text** [[Link]](https://www.kaggle.com/competitions/llm-detect-ai-generated-text)
 
-数据集使用 “🔍📝🕵️🤖” 队公开的混合数据 [link](https://www.kaggle.com/datasets/conjuring92/ai-bin7-mix-v1)
+数据集使用 “🔍📝🕵️🤖” 队公开的混合数据 [[Link]](https://www.kaggle.com/datasets/conjuring92/ai-bin7-mix-v1)
 
 ## Section 1: 准备
 
@@ -78,6 +78,8 @@ use_wandb=false
 ## Section 3：部署
 
 使用 Flask 实现简易的 web 服务 🤖
+
+https://github.com/hsushuai/detect-ai-generated-text/assets/136953962/47829dbc-71a5-44df-97ac-2e6e4b53c44b
 
 ```bash
 python deployment/app.py
