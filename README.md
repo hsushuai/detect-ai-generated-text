@@ -79,7 +79,11 @@ use_wandb=false
 
 使用 Flask 实现简易的 web 服务 🤖
 
-https://github.com/hsushuai/detect-ai-generated-text/assets/136953962/aaa32f36-a451-4f67-8b80-4ab65a1aa134
+
+
+https://github.com/hsushuai/detect-ai-generated-text/assets/136953962/9b0dbc05-16d8-4ad4-9e7d-a16e9576df0d
+
+
 
 ```bash
 python deployment/app.py
